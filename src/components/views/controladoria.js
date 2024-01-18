@@ -19,7 +19,7 @@ const ControladoriaJuridicaComponent = () => {
                   <h2 className="card-subtitle mb-2 text-muted">Transformando Desafios em Oportunidades</h2>
                   <p className="card-text" style={{ textAlign: 'justify' }}>
                     Na vanguarda da inovação, a Controladoria Jurídica não é apenas uma área administrativa, mas um motor estratégico para impulsionar o sucesso de escritórios de advocacia e departamentos jurídicos. Ao mergulhar nas complexidades do cenário legal, meu trabalho vai além de gerenciar operações; é uma jornada para otimizar cada aspecto, assegurando que cada serviço jurídico alcance seu máximo potencial.
-                  </p>
+                  </p>  
                   <p className="card-text" style={{ textAlign: 'justify' }}>
                     Desenvolvendo soluções inovadoras, integro a gestão administrativa e operacional, garantindo não apenas eficiência, mas uma qualidade excepcional em cada serviço prestado. Cada desafio é uma oportunidade de crescimento, e estou comprometido em transformar barreiras em conquistas, oferecendo resultados que superam expectativas.
                   </p>
