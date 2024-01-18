@@ -1,5 +1,9 @@
 import React from "react";
-import css from '../navbar/nav.css'
+import Gmail from '../../statics/img/gmail.png'
+import Github from '../../statics/img/github.png'
+import Whatsapp from '../../statics/img/whatsapp.png'
+import LinkedIn from '../../statics/img/linkedin.png'
+import Instagram from '../../statics/img/insta.png'
 
 function Nav() {
   return (
@@ -28,7 +32,7 @@ function Nav() {
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Rafael Suyama
+              Minhas Redes Sociais
             </h5>
             <button
               type="button"
@@ -39,36 +43,37 @@ function Nav() {
           </div>
           <div class="offcanvas-body" style={{ color: 'black' }}>
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  Advogado
+            <li class="nav-item" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <a class="nav-link" aria-current="page" href="https://www.linkedin.com/in/rafael-moreira-suyama-0043bb189/">
+                <img src={LinkedIn} style={{ width: '4rem', marginRight: '1rem' }} alt="Github Logo"></img> 
+                  LinkedIn
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Programador
+              <li class="nav-item" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <a class="nav-link" href="https://www.instagram.com/rafael.suyama/">
+                <img src={Instagram} style={{ width: '4rem', marginRight: '1rem' }} alt="Github Logo"></img> 
+                  Instagram
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Professor
+              <li class="nav-item" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <a class="nav-link" href="mailto:rafaelmoreirasuyama@gmail.com">
+                <img src={Gmail} style={{ width: '4rem', marginRight: '1rem' }} alt="Github Logo"></img> 
+                  Gmail
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Cantor
+              <li class="nav-item" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <a class="nav-link" href="https://wa.me/+5513996267989">
+                <img src={Whatsapp} style={{ width: '4rem', marginRight: '1rem' }} alt="Github Logo"></img> 
+                  Whatsapp
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Instrumentista
+              <li class="nav-item" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <a class="nav-link" href="https://github.com/RMSuyama">
+                <img src={Github} style={{ width: '4rem', marginRight: '1rem' }} alt="Github Logo"></img>
+                  Github
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Escritor
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>

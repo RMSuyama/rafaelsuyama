@@ -1,12 +1,12 @@
 import React from "react";
-import codeGif from "../../img/gif/code.gif";
-import chart from '../../img/gif/chart.gif'
-import python from '../../img/gif/python.gif'
-import data from '../../img/gif/database.gif'
+import codeGif from "../../statics/gif/code.gif";
+import chart from '../../statics/gif/chart.gif'
+import python from '../../statics/gif/python.gif'
+import data from '../../statics/gif/database.gif'
 
 function Home() {
   return (
-    <div className="container-fluid bg-light" style={{ padding: '3rem' }}>
+    <div className="container-fluid bg-light" style={{ paddingTop: '3rem',paddingRight: '3rem',paddingLeft: '3rem' }}>
       <div className="row d-flex justify-content-center">
 
         <div className="col-md-3 mb-3 d-flex justify-content-center">
