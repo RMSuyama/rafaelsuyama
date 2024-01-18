@@ -18,7 +18,7 @@ function SobreMim() {
           <div className="col-lg-6 text-center" style={{ display:'flex', flexDirection:'column', textAlign:'center', padding:'3rem' }}>
             <h2 className="display-4 fw-bold">Rafael Suyama</h2>
             <p className="lead" style={{ textAlign: 'justify' }}>
-              Sou um profissional apaixonado por tecnologia, advogado e programador. Combinando habilidades em direito, programação e análise de dados, busco soluções inovadoras para desafios complexos.
+              Sou um profissional que busca romper com o tradicional, advogado e programador. Combinando habilidades em direito, programação e análise de dados, busco soluções inovadoras para desafios complexos.
             </p>
             <p style={{ textAlign: 'justify' }}>
               Além da minha formação em Direito, tenho experiência em desenvolvimento de software, utilizando tecnologias como Python, JavaScript, Excel, VBA e Access. Sempre em busca de aprendizado e crescimento profissional.

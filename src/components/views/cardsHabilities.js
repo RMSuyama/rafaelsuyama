@@ -15,7 +15,7 @@ function Home() {
               <img src={codeGif} style={{ width: '6rem', padding: "1rem" }} alt="Code GIF" />
             </div>
             <p style={{ fontFamily: 'Share Tech, sans-serif', textAlign: "center" }}>
-              Procurando um desenvolvedor apaixonado por código? Conte comigo para trazer soluções inovadoras para sua equipe!
+              Procurando um desenvolvedor/advogado? Conte comigo para trazer soluções inovadoras para sua equipe!
             </p>
           </div>
         </div>

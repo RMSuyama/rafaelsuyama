@@ -1,5 +1,5 @@
 import React from 'react';
-import foto from  '../../statics/img/Foto.jpeg'
+import foto from  '../../statics/img/Foto2.jpeg'
 const JoinUsView = () => {
   return (
     <section id="join-us" className="py-5">
@@ -23,13 +23,14 @@ const JoinUsView = () => {
           </p>
 
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 text-center d-flex flex-column align-items-center justify-content-center">
             <img
-              src={foto}
-              alt="Legal Ops Professional"
-              className="img-fluid rounded-circle mb-4"
+                src={foto}
+                alt="Minha Foto"
+                className="img-fluid rounded-circle"
+                style={{ width: '30rem' }}
             />
-          </div>
+            </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Excel from '../../statics/img/excel.png';
 import Api from '../../statics/img/api.png';
 import Console from '../../statics/img/ideas.png';
 import Powerpoint from '../../statics/img/powerpoint.png';
-import meet from '../../statics/img/meet.png';
+import word from '../../statics/img/word.png';
 
 const LegalOpsComponent = () => {
   return (
@@ -50,8 +50,8 @@ const LegalOpsComponent = () => {
                     </div>
 
                     <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={meet} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Codificação" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Ambiente Amigável para Reuniões</p>
+                      <img src={word} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Codificação" />
+                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Design Law</p>
                     </div>
                   </div>
                 </div>
