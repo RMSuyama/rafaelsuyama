@@ -5,6 +5,7 @@ import Rodape from './components/navbar/rodape';
 import SobreMim from './components/views/sobre';
 import LegalOpsComponent from './components/views/legalops';
 import ControladoriaJuridicaComponent from './components/views/controladoria';
+import JoinUsView from './components/views/joinus';
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
     <ControladoriaJuridicaComponent></ControladoriaJuridicaComponent>
     <LegalOpsComponent></LegalOpsComponent>
+    <JoinUsView></JoinUsView>
 
     <Rodape></Rodape>
     </div>

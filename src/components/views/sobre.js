@@ -6,14 +6,15 @@ function SobreMim() {
     <section id="sobre-mim" className="py-3">
       <div className="bg-dark text-white">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-lg-6 text-center d-flex flex-column align-items-center justify-content-center">
+        <div className="col-lg-6 text-center d-flex flex-column align-items-center justify-content-center">
             <img
-              src={ProfileImage}
-              alt="Minha Foto"
-              className="img-fluid rounded-circle mb-4"
-              style={{ width: '25rem', paddingTop:'3rem' }}
+                src={ProfileImage}
+                alt="Minha Foto"
+                className="img-fluid rounded-circle"
+                style={{ width: '25rem' }}
             />
-          </div>
+            </div>
+
           <div className="col-lg-6 text-center" style={{ display:'flex', flexDirection:'column', textAlign:'center', padding:'3rem' }}>
             <h2 className="display-4 fw-bold">Rafael Suyama</h2>
             <p className="lead" style={{ textAlign: 'justify' }}>
