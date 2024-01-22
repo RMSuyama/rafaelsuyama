@@ -39,7 +39,7 @@ function ExperienciaProfissional() {
                 <div className="card-body">
                   <h5 className="card-title">{experiencia.cargo}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">{experiencia.periodo}</h6>
-                  <p className="card-text">{experiencia.descricao}</p>
+                  <p className="card-text" style={{textAlign:'justify'}}>{experiencia.descricao}</p>
                 </div>
               </div>
             </div>

@@ -11,13 +11,13 @@ const JoinUsView = () => {
               Oportunidades em Legal Ops e Controladoria Jurídica!
             </h2>
 
-            <p className="text-justify">
+            <p className="card p-2 text-justify bg-dark text-white"style={{textAlign:'justify'}}>
               Olá, sou Rafael Moreira Suyama, Advogado especializado em
               Controladoria Jurídica e Compliance, com experiência em
               Contratualismo, Due Diligence e Automação de Processos Jurídicos
               utilizando ferramentas como Office, VBA, SQL e React.js.
             </p>
-            <p className="lead">
+            <p className="card p-2 bg-dark text-white" style={{textAlign:'justify'}}>
               Estou pronto para enfrentar novos desafios e contribuir para a
               excelência nos processos legais. Vamos iniciar essa jornada
               juntos? Entre em contato e vamos conversar sobre como posso
