@@ -7,7 +7,7 @@ const JoinUsView = () => {
       <div className="pr-4 container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-6 text-justify">
-            <h2 className="display-4 fw-bold mb-5">
+            <h2 className="display-4 fw-bold">
               Oportunidades em Legal Ops e Controladoria Jurídica!
             </h2>
 
@@ -29,7 +29,7 @@ const JoinUsView = () => {
             <img
               src={foto}
               alt="Minha Foto"
-              className="img-fluid rounded-circle mb-4"
+              className="img-fluid rounded-circle"
               style={{ width: '25rem', height: '25rem', objectFit: 'cover', borderRadius: '50%' }}
             />
           </div>
