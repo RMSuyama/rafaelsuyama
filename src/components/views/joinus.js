@@ -4,7 +4,7 @@ import foto from '../../statics/img/Foto.jpeg';
 const JoinUsView = () => {
   return (
     <section id="join-us" className="py-5">
-      <div className=" card pr-4 container">
+      <div className="pr-4 container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-6 text-justify">
             <h2 className="display-4 fw-bold mb-5">
