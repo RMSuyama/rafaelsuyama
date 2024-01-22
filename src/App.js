@@ -6,6 +6,8 @@ import SobreMim from './components/views/sobre';
 import LegalOpsComponent from './components/views/legalops';
 import ControladoriaJuridicaComponent from './components/views/controladoria';
 import JoinUsView from './components/views/joinus';
+import ExperienciaProfissional from './components/views/trajetoria';
+import FormacaoAcademica from './components/views/formacao';
 
 
 
@@ -18,11 +20,11 @@ function App() {
 
     <Home></Home>
     <SobreMim></SobreMim>
-
     <ControladoriaJuridicaComponent></ControladoriaJuridicaComponent>
     <LegalOpsComponent></LegalOpsComponent>
+    <FormacaoAcademica></FormacaoAcademica>
+    <ExperienciaProfissional></ExperienciaProfissional>
     <JoinUsView></JoinUsView>
-
     <Rodape></Rodape>
     </div>
 

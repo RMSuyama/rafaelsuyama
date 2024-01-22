@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from '../../statics/img/Foto.jpeg';
+import ProfileImage from '../../statics/img/Foto 2.jpeg';
 
 function SobreMim() {
   return (
@@ -10,14 +10,17 @@ function SobreMim() {
             <img
                 src={ProfileImage}
                 alt="Minha Foto"
-                className="img-fluid rounded-circle"
-                style={{ width: '25rem' }}
+                className="img-fluid rounded-circle mb-4 mt-4"
+                style={{ width: '25rem', height: '25rem', objectFit: 'cover', borderRadius: '50%' }}
             />
             </div>
 
           <div className="col-lg-6 text-center" style={{ display:'flex', flexDirection:'column', textAlign:'center', padding:'3rem' }}>
-            <h2 className="display-4 fw-bold">Rafael Suyama</h2>
-            <p className="lead" style={{ textAlign: 'justify' }}>
+            <h2 className="display-4 fw-bold" style={{textAlign:'left'}}>Rafael Suyama</h2>
+
+            <p style={{fontSize:'1rem', textAlign:'justify'}}>Advogado | Controladoria | Compliance | Contratualista | Due Dilligence | Automação de Processos Jurídicos | Office | VBA | SQL | React.js</p>
+
+            <p style={{ textAlign: 'justify' }}>
               Sou advogado e programador. Combinando habilidades em direito, programação e análise de dados, busco soluções inovadoras para desafios complexos.
             </p>
             <p style={{ textAlign: 'justify' }}>

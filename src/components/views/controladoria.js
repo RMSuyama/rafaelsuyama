@@ -3,7 +3,7 @@ import LegalControllerImage from '../../statics/img/controle.png';
 import positivechart from '../../statics/img/positivechart.png';
 import venndiagram from '../../statics/img/venndiagram.png';
 import python from '../../statics/img/creative.png';
-import coding from '../../statics/img/graphics.png';
+import coding from '../../statics/img/coding.png';
 
 const ControladoriaJuridicaComponent = () => {
   return (
