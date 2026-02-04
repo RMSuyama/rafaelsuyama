@@ -67,8 +67,8 @@ export const translations = {
         legalops: {
             title: "Legal Operations",
             subtitle: "Elevando a eficiência jurídica através de dados e tecnologia.",
-            optimization: "Otimización de Procesos",
-            optimization_desc: "Reducción de tiempo en flujos de trabajo.",
+            optimization: "Otimização de Processos",
+            optimization_desc: "Redução de tempo em fluxos de trabalho.",
             integration: "Integração via API",
             integration_desc: "Conexão entre sistemas jurídicos e ERPs.",
             automation: "Automação Python/VBA",
@@ -80,7 +80,7 @@ export const translations = {
             p1: "Legal Ops não é apenas suporte administrativo: é a ",
             p1_bold: "espinha dorsal estratégica",
             p1_end: " de um departamento moderno.",
-            p2: "Minha abordagem foca em três pilares: **Pessoas, Processos e Tecnologia**. Eu não apenas 'gerencio' o departamento; eu o transformo. Identifico gargalos, implemento automações (Python/VBA) e crio dashboards que dão visibilidade real aos KPIs.",
+            p2: "Minha abordagem foca em três pilares: Pessoas, Processos e Tecnologia. Eu não apenas 'gerencio' o departamento; eu o transformo. Identifico gargalos, implemento automações (Python/VBA) e crio dashboards que dão visibilidade real aos KPIs.",
             li1: "Mapeamento e redesenho de fluxos de trabalho (BPMN)",
             li2: "Implementação de softwares jurídicos (CLM/ELM)",
             li3: "Criação de indicadores de desempenho (BI)"

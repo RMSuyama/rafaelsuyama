@@ -24,84 +24,56 @@ const LegalSolutions = () => {
     return audit_log(total)`
     },
     {
-      title: "Agendamento Preditivo",
-      description: "Motor de sincronização tolerante a falhas com escalabilidade via Cloud.",
+      title: "ETL & Agendamento Preditivo",
+      description: "Sincronização de dados jurídicos com Python e Excel (VBA/PowerQuery).",
       demo: (
-        <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
-          <div className="flex items-center gap-3 mb-2 p-2 bg-indigo-900/40 border border-indigo-500/30 rounded">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-            <div className="text-[11px]">
-              <span className="font-bold text-white block">Cluster Alpha: Sync Active</span>
-              <span>1,240 deadlines cross-verified</span>
-            </div>
+        <div className="p-4 bg-slate-900 rounded-lg text-slate-200 text-sm border border-slate-700 font-mono shadow-inner">
+          <div className="flex items-center gap-2 border-b border-slate-700 pb-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-red-500"></div>
+            <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+            <div className="w-2 h-2 rounded-full bg-green-500"></div>
+            <span className="text-[10px] text-slate-500 ml-2">bash -- user@lre-system:~/scripts</span>
           </div>
-          <div className="grid grid-cols-2 gap-2">
-            <div className="bg-slate-800 p-1 text-[9px] text-center rounded border border-slate-700">Latency: 45ms</div>
-            <div className="bg-slate-800 p-1 text-[9px] text-center rounded border border-slate-700 text-green-400 italic">No Overlaps Found</div>
-          </div>
-        </div>
-      ),
-      code: `async function syncDeadlines() {
-    const cluster = await connectCluster();
-    return cluster.checkIntegrity();
-}`
-    },
-    {
-      title: "High-Volume Data Lake (BI)",
-      description: "ETL robusto processando 500k+ registros judiciais p/ mês.",
-      demo: (
-        <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
-          <div className="text-center mb-2 font-bold text-xs uppercase text-slate-400 italic">Relatório de Custo-Benefício p/ Unidade</div>
-          <div className="flex gap-2 items-center justify-center h-20">
-            <div className="bg-indigo-500 w-6 h-[40%] rounded-t opacity-50"></div>
-            <div className="bg-indigo-500 w-6 h-[75%] rounded-t"></div>
-            <div className="bg-indigo-500 w-6 h-[95%] rounded-t shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
-          </div>
-          <div className="mt-2 text-[10px] text-center text-indigo-400">ROI: +42% vs Legacy Systems</div>
-        </div>
-      ),
-      code: `import spark
-df = spark.read.json("court_data/*.json")
-df.groupBy("region").avg("cost")`
-    },
-    {
-      title: "Monitor de Integridade & Compliance",
-      description: "Observabilidade total de riscos jurídicos em tempo real.",
-      demo: (
-        <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
-          <div className="space-y-2">
-            <div className="flex justify-between text-[10px]">
-              <span className="text-slate-400 uppercase font-bold">System Health (LRE)</span>
-              <span className="text-green-400">Resilient</span>
-            </div>
-            <div className="h-1 w-full bg-slate-800 rounded-full overflow-hidden">
-              <div className="h-full bg-gradient-to-r from-indigo-500 to-blue-400 w-[94%]"></div>
-            </div>
-            <div className="text-[9px] text-slate-500">Node Compliance: Region SUL/SP (Verified)</div>
+          <div className="space-y-1 text-[10px] md:text-xs">
+            <div className="text-slate-400">$ python legal_etl.py --start</div>
+            <div className="text-blue-400 opacity-90">Initializing ETL Pipeline...</div>
+            <div className="text-slate-500 italic">Reading source: 'Planilha_Mestra.xlsx'</div>
+            <div className="text-slate-300">Target: SQL Database (Postgres)</div>
+            <div className="text-green-400">SUCCESS: 450 rows processed.</div>
+            <div className="mt-2 text-slate-400">$ node scheduler_v2.js</div>
+            <div className="text-yellow-300">Syncing deadlines...</div>
           </div>
         </div>
       ),
-      code: `def watch_compliance():
-    status = sensor.check_violations()
-    return alert(status) if status > 0 else True`
+      code: `import pandas as pd
+from sqlalchemy import create_engine
+
+# Excel to SQL Pipeline
+def run_etl(file_path):
+    df = pd.read_excel(file_path)
+    # Transform logic here
+    df.to_sql('legal_data', con=engine)`
     },
     {
-      title: "Monitoramento em Escala",
-      description: "Web Scraping de alta disponibilidade em 92 Diários Oficiais.",
+      title: "Monitoramento Automatizado",
+      description: "Web Scraping (Python) para Diários Oficiais com parsing inteligente.",
       demo: (
         <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
-          <div className="font-mono text-[10px] space-y-1">
-            <div className="text-blue-400 italic">Searching DJEs... [DONE]</div>
-            <div className="text-green-400 font-mono text-[9px]">{' > '} Match found: OAB/SP 123456</div>
-            <div className="text-slate-300 ml-2 border-l border-slate-600 pl-2">"Vistos em despacho..."</div>
-            <div className="text-yellow-400">! Parsing logic Applied (NLP Success)</div>
+          <div className="font-mono text-[10px] space-y-1 bg-slate-900 p-3 rounded border border-slate-800">
+            <div className="text-blue-400 italic font-bold">Searching DJEs... [DONE]</div>
+            <div className="text-green-400 font-mono text-[9px] mt-1 pl-2 border-l-2 border-green-500/30">{' > '} Match found: OAB/SP 123456</div>
+            <div className="text-slate-400 ml-4 py-1 italic">"Vistos em despacho..."</div>
+            <div className="text-yellow-400 font-bold mt-1">! Parsing logic Applied (NLP Success)</div>
+            <div className="text-slate-500 text-[9px] mt-2 border-t border-slate-800 pt-1">Log saved to: results_today.csv</div>
           </div>
         </div>
       ),
       code: `async function scrapDJEs() {
     const list = await fetchDjeIndices();
     return parseMatches(list, query);
-}`
+} 
+// Python alternative available
+// using Selenium/BeautifulSoup`
     }
   ];
 
