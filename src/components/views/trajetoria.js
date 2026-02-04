@@ -30,17 +30,29 @@ function ExperienciaProfissional() {
   ];
 
   return (
-    <section id="experiencia-profissional" className="py-3">
-      <div className="container pt-4">
-        <div className="row">
+    <section id="experiencia-profissional" className="py-20 bg-slate-800 text-slate-200">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          Trajetória Profissional
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {experienciaProfissionalData.map((experiencia, index) => (
-            <div key={index} className="col-lg-6 mb-4">
-              <div className="card h-100 bg-dark text-white ">
-                <div className="card-body">
-                  <h5 className="card-title">{experiencia.cargo}</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">{experiencia.periodo}</h6>
-                  <p className="card-text" style={{textAlign:'justify'}}>{experiencia.descricao}</p>
+            <div key={index} className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 hover:border-indigo-500 transition-all duration-300 hover:shadow-xl">
+              <div className="flex flex-col h-full">
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-white mb-1">{experiencia.cargo}</h3>
+                  <div className="flex items-center text-sm text-indigo-300 mb-2">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    {experiencia.periodo}
+                  </div>
+                  {experiencia.local && (
+                    <div className="text-xs text-slate-400 mb-2">{experiencia.local}</div>
+                  )}
                 </div>
+                <p className="text-slate-300 text-sm leading-relaxed mt-auto border-t border-slate-600 pt-4">
+                  {experiencia.descricao}
+                </p>
               </div>
             </div>
           ))}

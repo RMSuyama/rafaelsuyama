@@ -4,55 +4,49 @@ import chart from '../../statics/gif/chart.gif'
 import python from '../../statics/gif/python.gif'
 import data from '../../statics/gif/database.gif'
 
+
 function Home() {
+  const cards = [
+    {
+      img: codeGif,
+      text: "Legal Systems Architect: Desenvolvendo infraestruturas jurídicas resilientes e escaláveis."
+    },
+    {
+      img: chart,
+      text: "Observabilidade & BI: Transformando logs jurídicos em dashboards estratégicos com alta disponibilidade."
+    },
+    {
+      img: python,
+      text: "Reliability Engineering: Engenharia de confiabilidade aplicada para eliminar a fragilidade operacional."
+    },
+    {
+      img: data,
+      text: "Scalable Governance: Arquitetando pipelines de dados robustos para conformidade em massa."
+    }
+  ];
+
   return (
-    <div className="container-fluid bg-light" style={{ paddingTop: '3rem',paddingRight: '3rem',paddingLeft: '3rem' }}>
-      <div className="row d-flex justify-content-center">
-
-        <div className="col-md-3 mb-3 d-flex justify-content-center">
-          <div className="card" style={{ width: '18rem', padding: '1rem', alignItems: "center" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={codeGif} style={{ width: '6rem', padding: "1rem" }} alt="Code GIF" />
+    <div className="w-full bg-slate-900 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center group text-center h-full"
+            >
+              <div className="w-24 h-24 mb-6 rounded-full bg-slate-700/50 flex items-center justify-center group-hover:bg-slate-700 transition-colors">
+                <img
+                  src={card.img}
+                  className="w-16 h-16 object-contain"
+                  alt="Skill Icon"
+                />
+              </div>
+              <p className="text-slate-300 font-share-tech text-lg leading-relaxed group-hover:text-white transition-colors">
+                {card.text}
+              </p>
             </div>
-            <p style={{ fontFamily: 'Share Tech, sans-serif', textAlign: "center" }}>
-              Procurando um desenvolvedor/advogado? Conte comigo para trazer soluções inovadoras para sua equipe!
-            </p>
-          </div>
+          ))}
         </div>
-
-        <div className="col-md-3 mb-3 d-flex justify-content-center">
-          <div className="card" style={{ width: '18rem', padding: '1rem', alignItems: "center" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={chart} style={{ width: '6rem', padding: "1rem" }} alt="Code GIF" />
-            </div>
-            <p style={{ fontFamily: 'Share Tech, sans-serif', textAlign: "center" }}>
-              Precisa de alguém especializado em análise de dados? Estou aqui para transformar números em insights valiosos para o seu negócio.
-            </p>
-          </div>
-        </div>
-
-        <div className="col-md-3 mb-3 d-flex justify-content-center">
-          <div className="card" style={{ width: '18rem', padding: '1rem', alignItems: "center" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={python} style={{ width: '6rem', padding: "1rem" }} alt="Code GIF" />
-            </div>
-            <p style={{ fontFamily: 'Share Tech, sans-serif', textAlign: "center" }}>
-              Em busca de um profissional versátil? Sou programador e advogado, pronto para lidar com desafios e oferecer soluções inteligentes.
-            </p>
-          </div>
-        </div>
-
-        <div className="col-md-3 mb-3 d-flex justify-content-center">
-          <div className="card" style={{ width: '18rem', padding: '1rem', alignItems: "center" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={data} style={{ width: '6rem', padding: "1rem" }} alt="Code GIF" />
-            </div>
-            <p style={{ fontFamily: 'Share Tech, sans-serif', textAlign: "center" }}>
-              Advogado com conhecimentos em Big Data? Posso contribuir para a sua empresa entendendo e aplicando as melhores práticas legais.
-            </p>
-          </div>
-        </div>
-
       </div>
     </div>
   );

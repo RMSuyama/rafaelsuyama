@@ -1,61 +1,93 @@
 import React from 'react';
-import LegalControllerImage from '../../statics/img/controle.png';
-import positivechart from '../../statics/img/positivechart.png';
-import venndiagram from '../../statics/img/venndiagram.png';
-import python from '../../statics/img/creative.png';
-import coding from '../../statics/img/coding.png';
 
 const ControladoriaJuridicaComponent = () => {
+  const features = [
+    {
+      title: "Gestão Jurídica",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+        </svg>
+      ),
+      desc: "Controle de prazos e audiências com SLA zero."
+    },
+    {
+      title: "Crescimento",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      ),
+      desc: "Estratégias escaláveis para expansão."
+    },
+    {
+      title: "Análise de Dados",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      desc: "Jurimetria para predição de resultados."
+    },
+    {
+      title: "Planejamento",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      ),
+      desc: "Budgeting e alocação eficiente de recursos."
+    },
+    {
+      title: "Ferramentas Tech",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      desc: "Domínio de softwares de gestão (CPJ, Espaider, etc)."
+    }
+  ];
+
   return (
-    <section id="controladoria-juridica" className="py-3">
-      <div className="container-fluid">
-        <div className="row justify-content-center align-items-center">
-          {/* Bootstrap Card */}
-          <div className="card bg-white text-dark border-0">
-            <div className="row no-gutters">
-              <div className="col-md-12">
-                <div className="card-body text">
-                <h1 className="card-title">Elevando a Eficiência na Gestão Jurídica</h1>
-                  <h2 className="card-subtitle mb-2 text-muted">Transformando Desafios em Oportunidades</h2>
-                  <p className="card-text" style={{ textAlign: 'justify' }}>
-                    Na vanguarda da inovação, a Controladoria Jurídica não é apenas uma área administrativa, mas um motor estratégico para impulsionar o sucesso de escritórios de advocacia e departamentos jurídicos. Ao mergulhar nas complexidades do cenário legal, meu trabalho vai além de gerenciar operações; é uma jornada para otimizar cada aspecto, assegurando que cada serviço jurídico alcance seu máximo potencial.
-                  </p>  
-                  <p className="card-text" style={{ textAlign: 'justify' }}>
-                    Desenvolvendo soluções inovadoras, integro a gestão administrativa e operacional, garantindo não apenas eficiência, mas uma qualidade excepcional em cada serviço prestado. Cada desafio é uma oportunidade de crescimento, e estou comprometido em transformar barreiras em conquistas, oferecendo resultados que superam expectativas.
-                  </p>
+    <section id="controladoria-juridica" className="py-20 bg-slate-800 text-slate-200">
+      <div className="container mx-auto px-4">
 
-                    <div className='card-row border-0 d-flex justify-content-around flex-wrap' style={{ marginTop: '2rem'}}>
-                    
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={LegalControllerImage} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Imagem Controladoria Jurídica" />
-                      <p className="text-center mt-2"style={{ textAlign: 'center' }}>Gestão Jurídica</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={positivechart} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Gráfico Positivo" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Crescimento</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={venndiagram} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Gráfico de Acesso" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Análise de Dados</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={python} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Diagrama Venn" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Planejamento</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={coding} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Codificação" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Ferramentas Tech</p>
-                    </div>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Feature Grid (Left side on desktop this time) */}
+          <div className="grid grid-cols-2 gap-4 order-2 md:order-1">
+            {features.map((item, index) => (
+              <div key={index} className={`bg-slate-700/50 p-6 rounded-xl hover:bg-slate-700 transition-colors flex flex-col items-center text-center ${index === 4 ? 'col-span-2' : ''}`}>
+                <div className="drop-shadow-lg">
+                  {item.icon}
                 </div>
+                <h4 className="font-bold text-white mb-1">{item.title}</h4>
+                <p className="text-sm text-slate-400">{item.desc}</p>
               </div>
+            ))}
+          </div>
+
+          {/* Text Content (Right side) */}
+          <div className="space-y-6 text-lg leading-relaxed order-1 md:order-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Controladoria Jurídica
+            </h2>
+            <h3 className="text-xl text-indigo-400 font-medium">
+              Transformando Desafios em Oportunidades
+            </h3>
+
+            <p>
+              A Controladoria Jurídica moderna vai além do cumprimento de prazos. Ela é a <strong className="text-white">inteligência do negócio</strong>.
+            </p>
+            <p>
+              Meu foco é garantir que a operação jurídica funcione como um relógio suíço, mas com a agilidade de uma startup.
+              Integro a gestão administrativa com automação, assegurando que cada advogado possa focar no que realmente importa: a tese jurídica.
+            </p>
+            <div className="bg-slate-900/50 p-4 rounded-lg border-l-4 border-indigo-500 italic text-slate-400">
+              "Não é apenas sobre gerenciar processos; é sobre otimizar a justiça."
             </div>
           </div>
-          {/* End of Bootstrap Card */}
+
         </div>
       </div>
     </section>

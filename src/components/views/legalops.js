@@ -1,64 +1,96 @@
 import React from 'react';
-import Excel from '../../statics/img/excel.png';
-import Api from '../../statics/img/api.png';
-import Console from '../../statics/img/ideas.png';
-import Powerpoint from '../../statics/img/powerpoint.png';
-import word from '../../statics/img/word.png';
 
 const LegalOpsComponent = () => {
+  const features = [
+    {
+      title: "Otimização de Processos",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      desc: "Redução de tempo em fluxos de trabalho."
+    },
+    {
+      title: "Integração via API",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      ),
+      desc: "Conexão entre sistemas jurídicos e ERPs."
+    },
+    {
+      title: "Automação Python/VBA",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      ),
+      desc: "Scripts para eliminar tarefas repetitivas."
+    },
+    {
+      title: "Gestão do Conhecimento",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.777 5.832 18.5 7.5 18.5s3.332.277 4.5 1.007c1.168-.73 2.832-1.007 4.5-1.007s3.332.277 4.5 1.007v-13C19.832 5.477 18.168 5 16.5 5s-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      desc: "Treinamentos e playbooks interativos."
+    },
+    {
+      title: "Legal Design",
+      icon: (
+        <svg className="w-12 h-12 mb-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+        </svg>
+      ),
+      desc: "Documentos claros e focados no usuário."
+    }
+  ];
+
   return (
-    <section id="legal-ops" className="py-3">
-      <div className="container-fluid">
-        <div className="row justify-content-center align-items-center">
-          {/* Bootstrap Card */}
-          <div className="card bg-dark text-white border-0">
-            <div className="row no-gutters">
-              <div className="col-md-12">
-                <div className="card-body text">
-                  <h1 className="card-title">Legal Ops</h1>
-                  <h2 className="card-subtitle mb-2 text-muted">Elevando a Eficiência na Gestão Jurídica</h2>
-                  <p className="card-text" style={{ textAlign: 'justify' }}>
-                    Imerso na dinâmica do universo jurídico, Legal Ops emerge como um arquiteto estratégico, guiando escritórios e departamentos jurídicos rumo ao sucesso. Minha abordagem transcende a gestão tradicional, tornando-se uma jornada dedicada a otimizar cada procedimento.
-                    </p>
-                    <p className="card-text" style={{ textAlign: 'justify' }}>
-                    Ao desenvolver soluções inovadoras, integro de maneira sinérgica a gestão administrativa e operacional, garantindo eficiência e qualidade excepcional em cada entrega. Encaro cada desafio como uma oportunidade de crescimento, comprometendo-me a superar barreiras e a fornecer resultados que transcendem as expectativas.
-                    </p>
-                    <p className="card-text" style={{ textAlign: 'justify' }}>
-                    Na implementação prática dessa visão, incorporo lógica de programação e automações, utilizando ferramentas como VBA e Python. Essa abordagem interdisciplinar colabora estreitamente com a equipe de TI, promovendo a eficiência dos processos jurídicos por meio de mapeamento detalhado. Nessa trajetória, a ousadia é mais do que uma escolha, é uma ferramenta essencial que impulsiona a transformação, a automação e a excelência contínua.
-                    </p>
+    <section id="legal-ops" className="py-20 bg-slate-900 text-slate-200">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Legal Operations
+          </h2>
+          <p className="text-xl text-slate-400">
+            Elevando a eficiência jurídica através de dados e tecnologia.
+          </p>
+        </div>
 
-                  <div className='card-row border-0 d-flex justify-content-around flex-wrap' style={{ marginTop: '2rem'}}>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={Excel} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Imagem Controladoria Jurídica" />
-                      <p className="text-center mt-2"style={{ textAlign: 'center' }}>Otimizando Migrações</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={Api} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Gráfico Positivo" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Integração de Tecnologias</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={Console} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Gráfico de Acesso" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Automações de Procedimentos</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={Powerpoint} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Diagrama Venn" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Treinamentos Eficientes</p>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-                      <img src={word} style={{ width: '5rem', height: '5rem' }} className="card-img" alt="Codificação" />
-                      <p className="text-center mt-2" style={{ textAlign: 'center' }}>Design Law</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>
+              Legal Ops não é apenas suporte administrativo: é a <strong className="text-indigo-400">espinha dorsal estratégica</strong> de um departamento moderno.
+            </p>
+            <p>
+              Minha abordagem foca em três pilares: **Pessoas, Processos e Tecnologia**.
+              Eu não apenas "gerencio" o departamento; eu o transformo. Identifico gargalos,
+              implemento automações (Python/VBA) e crio dashboards que dão visibilidade real aos KPIs.
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-slate-400 ml-4">
+              <li>Mapeamento e redesenho de fluxos de trabalho (BPMN)</li>
+              <li>Implementação de softwares jurídicos (CLM/ELM)</li>
+              <li>Criação de indicadores de desempenho (BI)</li>
+            </ul>
           </div>
-          {/* End of Bootstrap Card */}
+
+          {/* Feature Grid */}
+          <div className="grid grid-cols-2 gap-4">
+            {features.map((item, index) => (
+              <div key={index} className={`bg-slate-800 p-6 rounded-xl hover:bg-slate-700 transition-colors flex flex-col items-center text-center ${index === 4 ? 'col-span-2' : ''}`}>
+                <div className="drop-shadow-lg">
+                  {item.icon}
+                </div>
+                <h4 className="font-bold text-white mb-1">{item.title}</h4>
+                <p className="text-sm text-slate-400">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
