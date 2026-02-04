@@ -73,7 +73,7 @@ const ControladoriaJuridicaComponent = () => {
           </div>
 
           {/* Text Content (Right side) */}
-          <div className="space-y-6 text-lg leading-relaxed order-1 md:order-2">
+          <div className="space-y-6 text-lg leading-relaxed order-1 md:order-2 text-justify">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {t('controladoria.title')}
             </h2>

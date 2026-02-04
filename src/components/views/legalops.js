@@ -68,7 +68,7 @@ const LegalOpsComponent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-6 text-lg leading-relaxed">
+          <div className="space-y-6 text-lg leading-relaxed text-justify">
             <p>
               {t('legalops.p1')}<strong className="text-indigo-400">{t('legalops.p1_bold')}</strong>{t('legalops.p1_end')}
             </p>

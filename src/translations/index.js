@@ -5,33 +5,44 @@ export const translations = {
             connect: "Conecte-se comigo",
             system_network: "System Network",
             source_control: "Source Control",
-            direct_relay: "Direct Relay",
+            direct_relay: "WhatsApp",
         },
         hero: {
             title: "Rafael Suyama",
             subtitle: "Legal Reliability Engineering",
         },
         home: {
-            architect: "Legal Systems Architect: Desenvolvendo infraestruturas jurídicas resilientes e escaláveis.",
-            observability: "Observabilidade & BI: Transformando logs jurídicos em dashboards estratégicos com alta disponibilidade.",
-            reliability: "Reliability Engineering: Engenharia de confiabilidade aplicada para eliminar a fragilidade operacional.",
-            governance: "Scalable Governance: Arquitetando pipelines de dados robustos para conformidade em massa."
+            architect: "Legal Systems Architect",
+            architect_desc: "Desenvolvendo infraestruturas jurídicas resilientes.",
+            architect_skills: ["Python (Django/FastAPI)", "Microservices Architecture", "Docker & Kubernetes", "API Gateway Patterns"],
+
+            observability: "Observability & BI",
+            observability_desc: "Transformando logs em estratégia.",
+            observability_skills: ["Power BI & DAX", "SQL & NoSQL", "ELK Stack", "Prometheus & Grafana"],
+
+            reliability: "Reliability Engineering",
+            reliability_desc: "Eliminando fragilidade operacional.",
+            reliability_skills: ["Site Reliability Eng. (SRE)", "PyTest & Coverage", "CI/CD Pipelines", "Chaos Engineering"],
+
+            governance: "Scalable Governance",
+            governance_desc: "Pipelines de dados para compliance.",
+            governance_skills: ["Data Privacy (LGPD/GDPR)", "Compliance as Code", "dbt (Data Build Tool)", "Apache Airflow"]
         },
         sobre: {
             title: "Rafael Suyama",
             role: "Legal Reliability Engineer | Systems Architect | Data Analyst",
             future_title: "Engenharia do Futuro do Direito:",
-            future_desc: "Eu não apenas automatizo tarefas; eu projeto infraestruturas jurídicas escaláveis e resilientes. Minha abordagem trata processos jurídicos como sistemas complexos que devem ser otimizados para ",
-            reliability_99: "99.9% de confiabilidade",
-            and_integrity: " e integridade de dados.",
-            combining: "Combinando expertise jurídica profunda com ",
+            future_desc: "Minha missão não é apenas automatizar, mas arquitetar ecossistemas jurídicos à prova de falhas. Trato fluxos processuais como sistemas críticos que exigem ",
+            reliability_99: "99.9% de disponibilidade (SLA)",
+            and_integrity: " e integridade absoluta.",
+            combining: "Fundindo a prática jurídica com ",
             reliability_eng: "Engenharia de Confiabilidade",
-            eliminate: ", elimino a fragilidade operacional através de pipelines distribuídos em Python, observabilidade em tempo real no Power BI e sistemas web robustos.",
-            focus: "Focando em",
-            scaling: "Escalonamento de Governança",
-            resilience: "Resiliência de Sistemas",
-            jurimetrics: "Jurimetria Quantitativa",
-            build: " para construir departamentos jurídicos que operam na velocidade das empresas de tecnologia modernas.",
+            eliminate: ", elimino gargalos operacionais usando pipelines distribuídos em Python e observabilidade em tempo real.",
+            focus: "Foco estratégico em",
+            scaling: "Escalabilidade de Governança",
+            resilience: "Resiliência Sistêmica",
+            jurimetrics: "Jurimetria de Alta Precisão",
+            build: " para empoderar departamentos jurídicos modernos.",
             button: "Vamos Conversar"
         },
         controladoria: {
@@ -80,17 +91,28 @@ export const translations = {
             connect: "Connect with me",
             system_network: "System Network",
             source_control: "Source Control",
-            direct_relay: "Direct Relay",
+            direct_relay: "WhatsApp",
         },
         hero: {
             title: "Rafael Suyama",
             subtitle: "Legal Reliability Engineering",
         },
         home: {
-            architect: "Legal Systems Architect: Developing resilient and scalable legal infrastructures.",
-            observability: "Observability & BI: Transforming legal logs into strategic dashboards with high availability.",
-            reliability: "Reliability Engineering: Applied reliability engineering to eliminate operational fragility.",
-            governance: "Scalable Governance: Architecting robust data pipelines for mass compliance."
+            architect: "Legal Systems Architect",
+            architect_desc: "Developing resilient and scalable legal infrastructures.",
+            architect_skills: ["Python (Django/FastAPI)", "Microservices Architecture", "Docker & Kubernetes", "API Gateway Patterns"],
+
+            observability: "Observability & BI",
+            observability_desc: "Transforming legal logs into strategic dashboards.",
+            observability_skills: ["Power BI & DAX", "SQL & NoSQL", "ELK Stack", "Prometheus & Grafana"],
+
+            reliability: "Reliability Engineering",
+            reliability_desc: "Applying engineering to eliminate fragility.",
+            reliability_skills: ["Site Reliability Eng. (SRE)", "PyTest & Coverage", "CI/CD Pipelines", "Chaos Engineering"],
+
+            governance: "Scalable Governance",
+            governance_desc: "Architecting robust data pipelines for compliance.",
+            governance_skills: ["Data Privacy (LGPD/GDPR)", "Compliance as Code", "dbt (Data Build Tool)", "Apache Airflow"]
         },
         sobre: {
             title: "Rafael Suyama",
@@ -153,19 +175,30 @@ export const translations = {
     es: {
         nav: {
             connect: "Conéctate conmigo",
-            system_network: "Red del Sistema",
-            source_control: "Control de Código",
-            direct_relay: "Relé Directo",
+            system_network: "System Network",
+            source_control: "Source Control",
+            direct_relay: "WhatsApp",
         },
         hero: {
             title: "Rafael Suyama",
             subtitle: "Ingeniería de Fiabilidad Legal",
         },
         home: {
-            architect: "Legal Systems Architect: Desarrollando infraestructuras legales resilientes y escalables.",
-            observability: "Observabilidad y BI: Transformando registros legales en tableros estratégicos con alta disponibilidad.",
-            reliability: "Reliability Engineering: Ingeniería de confiabilidad aplicada para eliminar la fragilidad operativa.",
-            governance: "Scalable Governance: Arquitectando pipelines de datos robustos para el cumplimiento masivo."
+            architect: "Legal Systems Architect",
+            architect_desc: "Desarrollando infraestructuras legales resilientes.",
+            architect_skills: ["Python (Django/FastAPI)", "Microservices Architecture", "Docker & Kubernetes", "API Gateway Patterns"],
+
+            observability: "Observability & BI",
+            observability_desc: "Transformando registros en estrategia.",
+            observability_skills: ["Power BI & DAX", "SQL & NoSQL", "ELK Stack", "Prometheus & Grafana"],
+
+            reliability: "Reliability Engineering",
+            reliability_desc: "Ingeniería de confiabilidad aplicada.",
+            reliability_skills: ["Site Reliability Eng. (SRE)", "PyTest & Coverage", "CI/CD Pipelines", "Chaos Engineering"],
+
+            governance: "Scalable Governance",
+            governance_desc: "Pipelines de datos para cumplimiento.",
+            governance_skills: ["Data Privacy (LGPD/GDPR)", "Compliance as Code", "dbt (Data Build Tool)", "Apache Airflow"]
         },
         sobre: {
             title: "Rafael Suyama",

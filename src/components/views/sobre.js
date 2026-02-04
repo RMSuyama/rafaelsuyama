@@ -18,11 +18,11 @@ function SobreMim() {
           {/* Image Section */}
           <div className="lg:w-5/12 flex justify-center lg:justify-end">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <img
                 src={ProfileImage}
                 alt="Rafael Suyama"
-                className="relative w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-full border-4 border-slate-700 shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                className="relative w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl border-4 border-slate-700 shadow-2xl transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           </div>
@@ -38,7 +38,7 @@ function SobreMim() {
               </p>
             </div>
 
-            <div className="space-y-4 text-lg leading-relaxed text-slate-300">
+            <div className="space-y-4 text-lg leading-relaxed text-slate-300 text-justify">
               <p>
                 <strong className="text-white">{t('sobre.future_title')}</strong> {t('sobre.future_desc')}<span className="text-indigo-300 font-bold">{t('sobre.reliability_99')}</span>{t('sobre.and_integrity')}
               </p>
