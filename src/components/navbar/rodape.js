@@ -37,7 +37,7 @@ function Rodape() {
 
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-white mb-2 tracking-tighter">Rafael Suyama</h1>
-          <p className="text-xs uppercase tracking-[0.3em] text-indigo-500 font-bold">Legal Reliability Engineering</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-indigo-500 font-bold">Legal Ops</p>
         </div>
 
         <div className="flex justify-center space-x-6 mb-8">

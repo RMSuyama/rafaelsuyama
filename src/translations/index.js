@@ -9,7 +9,7 @@ export const translations = {
         },
         hero: {
             title: "Rafael Suyama",
-            subtitle: "Legal Reliability Engineering",
+            subtitle: "Legal Ops",
         },
         home: {
             architect: "Legal Systems Architect",
@@ -30,7 +30,7 @@ export const translations = {
         },
         sobre: {
             title: "Rafael Suyama",
-            role: "Legal Reliability Engineer | Systems Architect | Data Analyst",
+            role: "Legal Ops | Systems Architect | Data Analyst",
             future_title: "Engenharia do Futuro do Direito:",
             future_desc: "Minha missão não é apenas automatizar, mas arquitetar ecossistemas jurídicos à prova de falhas. Trato fluxos processuais como sistemas críticos que exigem ",
             reliability_99: "99.9% de disponibilidade (SLA)",
@@ -95,7 +95,7 @@ export const translations = {
         },
         hero: {
             title: "Rafael Suyama",
-            subtitle: "Legal Reliability Engineering",
+            subtitle: "Legal Ops",
         },
         home: {
             architect: "Legal Systems Architect",
@@ -116,7 +116,7 @@ export const translations = {
         },
         sobre: {
             title: "Rafael Suyama",
-            role: "Legal Reliability Engineer | Systems Architect | Data Analyst",
+            role: "Legal Ops | Systems Architect | Data Analyst",
             future_title: "Engineering the Future of Law:",
             future_desc: "I don't just automate tasks; I architect scalable, resilient legal infrastructures. My approach treats legal processes as complex systems that must be optimized for ",
             reliability_99: "99.9% reliability",
@@ -181,7 +181,7 @@ export const translations = {
         },
         hero: {
             title: "Rafael Suyama",
-            subtitle: "Ingeniería de Fiabilidad Legal",
+            subtitle: "Legal Ops",
         },
         home: {
             architect: "Legal Systems Architect",
@@ -202,7 +202,7 @@ export const translations = {
         },
         sobre: {
             title: "Rafael Suyama",
-            role: "Legal Reliability Engineer | Systems Architect | Data Analyst",
+            role: "Legal Ops | Systems Architect | Data Analyst",
             future_title: "Ingeniería del Futuro del Derecho:",
             future_desc: "No solo automatizo tareas; diseño infraestructuras legales escalables y resilientes. Mi enfoque trata los procesos legales como sistemas complejos que deben optimizarse para una ",
             reliability_99: "confiabilidad del 99,9%",
