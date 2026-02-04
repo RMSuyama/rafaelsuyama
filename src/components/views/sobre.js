@@ -1,7 +1,10 @@
-import React from 'react';
-import ProfileImage from '../../statics/img/Foto 2.jpeg';
+import { useLanguage } from "../../context/LanguageContext";
+import { useTranslation } from "../../translations";
 
 function SobreMim() {
+  const { language } = useLanguage();
+  const t = useTranslation(language);
+
   return (
     <section id="sobre-mim" className="relative py-24 bg-slate-800 text-slate-300 overflow-hidden">
       {/* Decorative Background Element */}
@@ -26,26 +29,26 @@ function SobreMim() {
           <div className="lg:w-7/12 text-center lg:text-left space-y-6">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2">
-                Rafael Suyama
+                {t('sobre.title')}
               </h2>
               <p className="text-xl text-indigo-400 font-medium">
-                Legal Reliability Engineer | Systems Architect | Data Analyst
+                {t('sobre.role')}
               </p>
             </div>
 
             <div className="space-y-4 text-lg leading-relaxed text-slate-300">
               <p>
-                <strong className="text-white">Engineering the Future of Law:</strong> I don't just automate tasks; I architect scalable, resilient legal infrastructures. My approach treats legal processes as complex systems that must be optimized for <span className="text-indigo-300 font-bold">99.9% reliability</span> and data integrity.
+                <strong className="text-white">{t('sobre.future_title')}</strong> {t('sobre.future_desc')}<span className="text-indigo-300 font-bold">{t('sobre.reliability_99')}</span>{t('sobre.and_integrity')}
               </p>
               <p>
-                Combining deep Legal expertise with <span className="text-indigo-300 font-semibold">Reliability Engineering</span>, I eliminate operational fragility through distributed pipelines in Python, real-time observability in Power BI, and robust web systems.
+                {t('sobre.combining')}<span className="text-indigo-300 font-semibold">{t('sobre.reliability_eng')}</span>{t('sobre.eliminate')}
               </p>
               <p>
-                Focusing on
-                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">Scaling Governance</span>,
-                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">System Resilience</span> and
-                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">Quantitative Jurimetrics</span>
-                to build legal departments that operate at the speed of modern tech companies.
+                {t('sobre.focus')}
+                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">{t('sobre.scaling')}</span>,
+                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">{t('sobre.resilience')}</span> and
+                <span className="bg-slate-700/50 px-2 py-1 rounded mx-1 text-white text-sm border border-slate-600">{t('sobre.jurimetrics')}</span>
+                {t('sobre.build')}
               </p>
             </div>
 
@@ -56,7 +59,7 @@ function SobreMim() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all transform hover:-translate-y-1"
               >
-                Vamos Conversar
+                {t('sobre.button')}
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>

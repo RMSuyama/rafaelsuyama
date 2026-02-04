@@ -13,23 +13,25 @@ import LegalSolutions from './components/views/LegalSolutions';
 
 
 
+import { LanguageProvider } from './context/LanguageContext';
+
 function App() {
   return (
-    <div className='app'>
+    <LanguageProvider>
+      <div className='app'>
+        <Nav></Nav>
 
-      <Nav></Nav>
-
-      <Home></Home>
-      <SobreMim></SobreMim>
-      <ControladoriaJuridicaComponent></ControladoriaJuridicaComponent>
-      <LegalOpsComponent></LegalOpsComponent>
-      <FormacaoAcademica></FormacaoAcademica>
-      <ExperienciaProfissional></ExperienciaProfissional>
-      <LegalSolutions></LegalSolutions>
-      <JoinUsView></JoinUsView>
-      <Rodape></Rodape>
-    </div>
-
+        <Home></Home>
+        <SobreMim></SobreMim>
+        <ControladoriaJuridicaComponent></ControladoriaJuridicaComponent>
+        <LegalOpsComponent></LegalOpsComponent>
+        <FormacaoAcademica></FormacaoAcademica>
+        <ExperienciaProfissional></ExperienciaProfissional>
+        <LegalSolutions></LegalSolutions>
+        <JoinUsView></JoinUsView>
+        <Rodape></Rodape>
+      </div>
+    </LanguageProvider>
   )
 }
 

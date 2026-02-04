@@ -3,25 +3,29 @@ import codeGif from "../../statics/gif/code.gif";
 import chart from '../../statics/gif/chart.gif'
 import python from '../../statics/gif/python.gif'
 import data from '../../statics/gif/database.gif'
-
+import { useLanguage } from "../../context/LanguageContext";
+import { useTranslation } from "../../translations";
 
 function Home() {
+  const { language } = useLanguage();
+  const t = useTranslation(language);
+
   const cards = [
     {
       img: codeGif,
-      text: "Legal Systems Architect: Desenvolvendo infraestruturas jurídicas resilientes e escaláveis."
+      text: t('home.architect')
     },
     {
       img: chart,
-      text: "Observabilidade & BI: Transformando logs jurídicos em dashboards estratégicos com alta disponibilidade."
+      text: t('home.observability')
     },
     {
       img: python,
-      text: "Reliability Engineering: Engenharia de confiabilidade aplicada para eliminar a fragilidade operacional."
+      text: t('home.reliability')
     },
     {
       img: data,
-      text: "Scalable Governance: Arquitetando pipelines de dados robustos para conformidade em massa."
+      text: t('home.governance')
     }
   ];
 
