@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from "../../context/LanguageContext";
 import { useTranslation } from "../../translations";
+import ProfileImage from "../../statics/img/Foto.jpeg";
 
 function SobreMim() {
   const { language } = useLanguage();
