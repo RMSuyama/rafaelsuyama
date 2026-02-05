@@ -13,19 +13,19 @@ export const translations = {
         },
         home: {
             architect: "Legal Systems Architect",
-            architect_desc: "Desenvolvendo infraestruturas jurídicas resilientes.",
+            architect_desc: "Arquitetura de sistemas jurídicos à prova de falhas.",
             architect_skills: ["Python (Django/FastAPI)", "Microservices Architecture", "Docker & Kubernetes", "API Gateway Patterns"],
 
             observability: "Observability & BI",
-            observability_desc: "Transformando logs em estratégia.",
+            observability_desc: "Monitoramento ativo transformando dados em decisões.",
             observability_skills: ["Power BI & DAX", "SQL & NoSQL", "ELK Stack", "Prometheus & Grafana"],
 
             reliability: "Reliability Engineering",
-            reliability_desc: "Eliminando fragilidade operacional.",
+            reliability_desc: "Confiabilidade técnica para operações zero-erro.",
             reliability_skills: ["Site Reliability Eng. (SRE)", "PyTest & Coverage", "CI/CD Pipelines", "Chaos Engineering"],
 
             governance: "Scalable Governance",
-            governance_desc: "Pipelines de dados para compliance.",
+            governance_desc: "Governança de dados escalável e auditável.",
             governance_skills: ["Data Privacy (LGPD/GDPR)", "Compliance as Code", "dbt (Data Build Tool)", "Apache Airflow"]
         },
         sobre: {
@@ -68,13 +68,13 @@ export const translations = {
             title: "Legal Operations",
             subtitle: "Elevando a eficiência jurídica através de dados e tecnologia.",
             optimization: "Otimização de Processos",
-            optimization_desc: "Redução de tempo em fluxos de trabalho.",
+            optimization_desc: "Redução drástica do ciclo de vida operacional.",
             integration: "Integração via API",
-            integration_desc: "Conexão entre sistemas jurídicos e ERPs.",
+            integration_desc: "Interoperabilidade total entre sistemas e ERPs.",
             automation: "Automação Python/VBA",
-            automation_desc: "Scripts para eliminar tarefas repetitivas.",
+            automation_desc: "Eliminação do trabalho repetitivo com scripts inteligentes.",
             knowledge: "Gestão do Conhecimento",
-            knowledge_desc: "Treinamentos e playbooks interativos.",
+            knowledge_desc: "Base de conhecimento viva e interativa.",
             design: "Legal Design",
             design_desc: "Documentos claros e focados no usuário.",
             p1: "Legal Ops não é apenas suporte administrativo: é a ",
