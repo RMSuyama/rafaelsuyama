@@ -5,8 +5,9 @@ const LegalSolutions = () => {
 
   const solutions = [
     {
-      title: "Cálculos Judiciais Automatizados",
-      description: "Pipeline de apuração imediata com 98% de precisão auditável.",
+      title: "Cálculos Judiciais e Financeiros",
+      description: "Liquidação de sentenças e atualizações monetárias em segundos.",
+      focus: "Eliminar o erro humano e o tempo gasto com planilhas complexas.",
       demo: (
         <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600 font-mono scale-95 origin-top">
           <div className="mb-2 text-indigo-400 font-bold uppercase text-[10px]">Job ID: #LRE-8821 (SUCCESS)</div>
@@ -24,56 +25,99 @@ const LegalSolutions = () => {
     return audit_log(total)`
     },
     {
-      title: "ETL & Agendamento Preditivo",
-      description: "Sincronização de dados jurídicos com Python e Excel (VBA/PowerQuery).",
+      title: "Assistente de Agenda & Prazos",
+      description: "Sincronização automática de audiências com alertas proativos.",
+      focus: "Organização logística e garantia de que nenhum compromisso seja esquecido.",
       demo: (
         <div className="p-4 bg-slate-900 rounded-lg text-slate-200 text-sm border border-slate-700 font-mono shadow-inner">
           <div className="flex items-center gap-2 border-b border-slate-700 pb-2 mb-2">
             <div className="w-2 h-2 rounded-full bg-red-500"></div>
             <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
             <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <span className="text-[10px] text-slate-500 ml-2">bash -- user@lre-system:~/scripts</span>
+            <span className="text-[10px] text-slate-500 ml-2">bot -- scheduler_service</span>
           </div>
           <div className="space-y-1 text-[10px] md:text-xs">
-            <div className="text-slate-400">$ python legal_etl.py --start</div>
-            <div className="text-blue-400 opacity-90">Initializing ETL Pipeline...</div>
-            <div className="text-slate-500 italic">Reading source: 'Planilha_Mestra.xlsx'</div>
-            <div className="text-slate-300">Target: SQL Database (Postgres)</div>
-            <div className="text-green-400">SUCCESS: 450 rows processed.</div>
-            <div className="mt-2 text-slate-400">$ node scheduler_v2.js</div>
-            <div className="text-yellow-300">Syncing deadlines...</div>
+            <div className="text-slate-400">$ node scheduler_v2.js --sync</div>
+            <div className="text-blue-400 opacity-90">Checking court APIs...</div>
+            <div className="text-slate-500 italic">Found: 'Audiência TJSP - Proc. 10222'</div>
+            <div className="text-yellow-300">Conflict Detected! Auto-reschedule triggered.</div>
+            <div className="text-green-400">SUCCESS: Calendar updated + Slack Alert sent.</div>
           </div>
         </div>
       ),
-      code: `import pandas as pd
-from sqlalchemy import create_engine
-
-# Excel to SQL Pipeline
-def run_etl(file_path):
-    df = pd.read_excel(file_path)
-    # Transform logic here
-    df.to_sql('legal_data', con=engine)`
+      code: `async function syncDeadlines() {
+    const events = await fetchCourtEvents();
+    if (detectConflict(events)) {
+        return alertTeam("Slack");
+    }
+}`
     },
     {
-      title: "Monitoramento Automatizado",
-      description: "Web Scraping (Python) para Diários Oficiais com parsing inteligente.",
+      title: "Central de Business Intelligence",
+      description: "Visualização de dados operacionais e financeiros em tempo real.",
+      focus: "Transformar o escritório em uma empresa guiada por dados (Data-driven).",
+      demo: (
+        <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
+          <div className="text-center mb-2 font-bold text-xs uppercase text-slate-400 italic">Relatório de Custo-Benefício p/ Unidade</div>
+          <div className="flex gap-2 items-center justify-center h-20">
+            <div className="bg-indigo-500 w-6 h-[40%] rounded-t opacity-50"></div>
+            <div className="bg-indigo-500 w-6 h-[75%] rounded-t"></div>
+            <div className="bg-indigo-500 w-6 h-[95%] rounded-t shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+          </div>
+          <div className="mt-2 text-[10px] text-center text-indigo-400">ROI: +42% vs Legacy Systems</div>
+        </div>
+      ),
+      code: `import spark
+df = spark.read.json("court_data/*.json")
+df.groupBy("region").avg("cost")`
+    },
+    {
+      title: "Gerador de Relatórios (PDF/Excel)",
+      description: "Exportação de métricas de produtividade prontas para o cliente.",
+      focus: "Economizar horas de trabalho manual na hora de prestar contas.",
+      demo: (
+        <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
+          <div className="space-y-2">
+            <div className="flex justify-between text-[10px]">
+              <span className="text-slate-400 uppercase font-bold">Generating Monthly Report...</span>
+              <span className="text-green-400 animate-pulse">Processing</span>
+            </div>
+            <div className="h-1 w-full bg-slate-800 rounded-full overflow-hidden">
+              <div className="h-full bg-blue-500 w-[75%]"></div>
+            </div>
+            <div className="grid grid-cols-2 gap-2 mt-2">
+              <div className="bg-slate-800 p-1 text-[9px] text-center rounded text-slate-400">Format: .PDF</div>
+              <div className="bg-slate-800 p-1 text-[9px] text-center rounded text-slate-400">Size: 2.4MB</div>
+            </div>
+            <div className="text-[9px] text-slate-500 text-center pt-1">Auto-mailing to: client@corp.com</div>
+          </div>
+        </div>
+      ),
+      code: `def generate_report(client_id):
+    data = query_metrics(client_id)
+    pdf = create_pdf(data, template="monthly")
+    return send_email(pdf, "client@corp.com")`
+    },
+    {
+      title: "Radar de Tendências e Riscos",
+      description: "Identificação de gargalos e insights sobre o comportamento dos tribunais.",
+      focus: "Inteligência competitiva e antecipação de problemas.",
       demo: (
         <div className="p-4 bg-slate-700/50 rounded-lg text-slate-200 text-sm border border-slate-600">
           <div className="font-mono text-[10px] space-y-1 bg-slate-900 p-3 rounded border border-slate-800">
-            <div className="text-blue-400 italic font-bold">Searching DJEs... [DONE]</div>
-            <div className="text-green-400 font-mono text-[9px] mt-1 pl-2 border-l-2 border-green-500/30">{' > '} Match found: OAB/SP 123456</div>
-            <div className="text-slate-400 ml-4 py-1 italic">"Vistos em despacho..."</div>
-            <div className="text-yellow-400 font-bold mt-1">! Parsing logic Applied (NLP Success)</div>
-            <div className="text-slate-500 text-[9px] mt-2 border-t border-slate-800 pt-1">Log saved to: results_today.csv</div>
+            <div className="text-blue-400 italic font-bold">Scanning Tribunal Trends...</div>
+            <div className="text-slate-300 ml-2">Region: <span className="text-yellow-400">TRT-2</span></div>
+            <div className="text-green-400 font-mono text-[9px] mt-1 pl-2 border-l-2 border-green-500/30">Anomaly Detected: High dismissal rate</div>
+            <div className="text-slate-400 ml-4 py-1 italic">"Juiz X - Vara 5 - Improcedência padrão"</div>
+            <div className="text-slate-500 text-[9px] mt-2 border-t border-slate-800 pt-1">Alert: Risk Score increased to 8.5/10</div>
           </div>
         </div>
       ),
-      code: `async function scrapDJEs() {
-    const list = await fetchDjeIndices();
-    return parseMatches(list, query);
-} 
-// Python alternative available
-// using Selenium/BeautifulSoup`
+      code: `async function scanRiskPatterns() {
+    const decisions = await scrapDecisions("TRT-2");
+    const risk = analyzeSentiment(decisions);
+    return risk > 8 ? alertStrategyTeam() : log();
+}`
     }
   ];
 
@@ -215,8 +259,16 @@ def run_etl(file_path):
                 </div>
 
                 <div className="flex justify-between items-center mb-8 pb-4 border-b border-slate-700">
-                  <h3 className="text-2xl font-bold text-white">{solutions[activeTab].title}</h3>
-                  <span className="px-3 py-1 bg-indigo-500/20 text-indigo-400 text-xs font-bold rounded-full uppercase tracking-wide border border-indigo-500/30">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{solutions[activeTab].title}</h3>
+                    {solutions[activeTab].focus && (
+                      <p className="text-emerald-400 font-mono text-xs md:text-sm">
+                        <span className="font-bold text-slate-500 uppercase tracking-wider mr-2">Foco:</span>
+                        {solutions[activeTab].focus}
+                      </p>
+                    )}
+                  </div>
+                  <span className="px-3 py-1 bg-indigo-500/20 text-indigo-400 text-xs font-bold rounded-full uppercase tracking-wide border border-indigo-500/30 whitespace-nowrap ml-2">
                     Live Demo
                   </span>
                 </div>
