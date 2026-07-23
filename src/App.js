@@ -8,10 +8,6 @@ import ControladoriaJuridicaComponent from './components/views/controladoria';
 import JoinUsView from './components/views/joinus';
 import ExperienciaProfissional from './components/views/trajetoria';
 import FormacaoAcademica from './components/views/formacao';
-import LegalSolutions from './components/views/LegalSolutions';
-
-
-
 
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -27,7 +23,6 @@ function App() {
         <LegalOpsComponent></LegalOpsComponent>
         <FormacaoAcademica></FormacaoAcademica>
         <ExperienciaProfissional></ExperienciaProfissional>
-        <LegalSolutions></LegalSolutions>
         <JoinUsView></JoinUsView>
         <Rodape></Rodape>
       </div>
@@ -36,3 +31,4 @@ function App() {
 }
 
 export default App;
+
